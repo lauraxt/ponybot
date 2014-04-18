@@ -72,6 +72,8 @@ bot.on("message", function(from, to, message) {
         bot.say(to, "Here's a pony: " + pony);
     } else if (message.indexOf(IRCNICK) == 0 && /botsnack\s*$/i.test(message)) {
        bot.say(to, 'munch munch munch');
+    } else if (/pony/i.test(message)) {
+       bot.say(to, 'Did someone call for a pony?');
     } else if (message.indexOf(IRCNICK) == 0) {
        bot.say(to, 'Neigh!');
     }
