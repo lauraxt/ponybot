@@ -67,11 +67,10 @@ bot.on("message", function(from, to, message) {
     if (to.indexOf('#') != 0) return;
     if (from == IRCNICK) return;
     message = message.toLowerCase();
-    if (/i want a pony\s*$/i.test(message)) {
+    if (/i want a pony/i.test(message)) {
         pony = ponies[Math.floor(Math.random() * ponies.length)];
         bot.say(to, "Here's a pony: " + pony);
-    }
-    if (message.indexOf(IRCNICK) == 0 && /botsnack\s*$/i.test(message)) {
+    } else if (message.indexOf(IRCNICK) == 0 && /botsnack\s*$/i.test(message)) {
        bot.say(to, 'munch munch munch');
     } else if (message.indexOf(IRCNICK) == 0) {
        bot.say(to, 'Neigh!');
