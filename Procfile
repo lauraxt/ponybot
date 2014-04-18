@@ -1,1 +1,1 @@
-irc: node ponybot.js
+worker: node ponybot.js
