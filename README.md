@@ -12,8 +12,8 @@ Then run ponybot as follows:
 
 
 ## TODOs 
-- Support multiple channels
-- Break out config into a separate file
+- ~~Support multiple channels~~
+- ~~Break out config into a separate file~~
 - Add ability to teach ponybot about new ponies, or random google image search 
 
 
