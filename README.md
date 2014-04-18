@@ -1,12 +1,13 @@
 # ponybot
-=======
 
 _Ponies for everyone._
 
 Requires node. You'll need to
+
     npm install irc
 
 Then run ponybot as follows:
+
     node ponybot.js
 
 
